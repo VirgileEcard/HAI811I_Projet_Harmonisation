@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projetharmonisation.view.HomeFragment"
+        android:label="Accueil">
+        <action
+            android:id="@+id/action_homeFragment_to_harmonySelectionFragment"
+            app:destination="@id/harmonySelectionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_internalGalleryFragment"
+            app:destination="@id/internalGalleryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/harmonySelectionFragment"
+        android:name="com.example.projetharmonisation.view.HarmonySelectionFragment"
+        android:label="Harmonie">
+        <action
+            android:id="@+id/action_harmonySelectionFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.example.projetharmonisation.view.EditorFragment"
+        android:label="Éditeur">
+        <action
+            android:id="@+id/action_editorFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.projetharmonisation.view.ResultFragment"
+        android:label="Résultat final" >
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/internalGalleryFragment"
+        android:name="com.example.projetharmonisation.view.gallery.InternalGalleryFragment"
+        android:label="Galerie" >
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

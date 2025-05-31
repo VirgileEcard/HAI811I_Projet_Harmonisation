@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Projet Harmonisation</string>
+    <string name="PICK_IMAGE">Choisissez votre image</string>
+    <string name="OPEN_GALLERY">Ouvrir la galerie</string>
+    <string name="TAKE_PICTURE">Prendre une photo</string>
+    <string name="DOWNLOAD">Télécharger depuis un lien</string>
+    <string name="ACCEPT">Valider</string>
+    <string name="GALLERY">Galerie</string>
+    <string name="CLEAR_GALLERY">Vider la galerie</string>
+    <string name="FINAL_RESULT">Résultat final</string>
+    <string name="SAVE">Sauvegarder</string>
+    <string name="SHARE">Partager</string>
+    <string name="DELETE">Supprimer</string>
+    <string name="EDIT_TITLE">Edition</string>
+    <string name="SATURATION">Saturation</string>
+    <string name="REAPPLY">Réappliquer</string>
+    <string name="PICK_HARMONY">Choisissez une harmonie</string>
+</resources>
