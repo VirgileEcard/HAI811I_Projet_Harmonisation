@@ -79,7 +79,7 @@ public class HomeFragment extends Fragment {
         ImageButton buttonCloud = root.findViewById(R.id.buttonCloud);
         buttonNext = root.findViewById(R.id.buttonNext);
         ImageButton buttonGalleryInternal = root.findViewById(R.id.buttonGalleryInternal);
-        Button buttonClearGallery = root.findViewById(R.id.buttonClearGallery);
+        //Button buttonClearGallery = root.findViewById(R.id.buttonClearGallery);
 
 
         viewModel = new ViewModelProvider(requireActivity()).get(ImageViewModel.class);
@@ -143,7 +143,7 @@ public class HomeFragment extends Fragment {
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_homeFragment_to_internalGalleryFragment);
         });
-
+/*
         buttonClearGallery.setOnClickListener(v -> {
             new AlertDialog.Builder(requireContext())
                     .setTitle("Vider la galerie")
@@ -158,7 +158,7 @@ public class HomeFragment extends Fragment {
                     })
                     .setNegativeButton("Annuler", null)
                     .show();
-        });
+        });*/
 
         return root;
     }
